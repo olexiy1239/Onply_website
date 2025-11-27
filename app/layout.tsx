@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "ONPLY — AI music mixes in a swipeable feed",
@@ -16,7 +16,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-shoom bg-fixed bg-cover">{children}</body>
+      <body className="bg-shoom bg-cover">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
