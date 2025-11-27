@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export default function AnimatedPhone({ src = "/feed_page.svg" }: { src?: string }) {
+export default function AnimatedPhone({ src = "/Feed_page2.png" }) {
   return (
     <motion.div
       initial={{ rotate: -8, y: 20, opacity: 0 }}
@@ -10,18 +10,18 @@ export default function AnimatedPhone({ src = "/feed_page.svg" }: { src?: string
       transition={{ type: "spring", stiffness: 80, damping: 14, delay: 0.2 }}
       className="
         relative
-        w-full            /* 🔥 тепер займає ширину контейнера */
-        aspect-[260/520]  /* 🔥 зберігає форму телефону */
+        w-full
+        max-w-[260px]  /* 🔥 задає реальну максимальну ширину телефону */
         rounded-[36px]
       "
     >
       <Image
         src={src}
         alt="ONPLY feed"
-        fill
-        className="object-cover rounded-[36px]"
+        width={260}
+        height={520}
+        className="object-cover rounded-[36px] w-full h-auto"
         priority
-        sizes="100vw"
       />
     </motion.div>
   );
