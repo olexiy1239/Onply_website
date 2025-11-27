@@ -24,28 +24,21 @@ export default function Header() {
 
   const scrollToId = (id: string) => {
     if (typeof window === "undefined") return;
-  
     const el = document.getElementById(id);
     if (!el) return;
-  
-    // динамічно беремо висоту поточного headerʼа
-    const header = document.querySelector("header");
-    const headerHeight =
-      header instanceof HTMLElement ? header.offsetHeight : 0;
-  
-    const rect = el.getBoundingClientRect();
-    const y = window.scrollY + rect.top - headerHeight - 8; // -8px щоб секція була майже під хедером
-  
+
+    const headerOffset = 80; // щоб хедер не перекривав секцію
+    const y = el.getBoundingClientRect().top + window.scrollY - headerOffset;
+
     window.scrollTo({ top: y, behavior: "smooth" });
-    setMenuOpen(false);
+    setMenuOpen(false); // закрити бургер після кліку
   };
-  
+
   const scrollToTop = () => {
     if (typeof window === "undefined") return;
     window.scrollTo({ top: 0, behavior: "smooth" });
     setMenuOpen(false);
   };
-  
 
   return (
     <header
