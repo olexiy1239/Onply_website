@@ -1,0 +1,11 @@
+{
+    "headers": ["Platform", "AI Mixing", "Swipe Feed", "UGC Mixes", "Community"],
+    "rows": [
+      ["ONPLY", "Yes", "Yes", "Yes", "Yes"],
+      ["TikTok", "No", "Yes (video)", "Yes (video)", "Yes"],
+      ["Spotify", "Basic crossfade", "No", "Playlists only", "Limited"],
+      ["SoundCloud", "No", "No", "Tracks/DJ sets", "Yes"],
+      ["Offtrack", "Yes", "No", "No", "No"]
+    ]
+  }
+  

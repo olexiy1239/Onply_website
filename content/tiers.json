@@ -1,0 +1,9 @@
+{
+    "tiers": [
+      { "name": "Supporter", "price": 5, "perks": ["Early access badge"] },
+      { "name": "Founder", "price": 25, "perks": ["Beta + Private Discord"] },
+      { "name": "Angel", "price": 100, "perks": ["Name on Wall of Thanks + early username"] },
+      { "name": "Sponsor", "price": 500, "perks": ["Logo in footer (3 mo) + insights"] }
+    ]
+  }
+  

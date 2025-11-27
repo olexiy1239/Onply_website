@@ -1,0 +1,10 @@
+{
+    "items": [
+      { "q": "Q4 2025", "status": "MVP dev", "desc": "AI mixer core + iOS/Android shell, licensing approach" },
+      { "q": "Q1 2026", "status": "Closed beta", "desc": "Invite early users & creators, feedback loop" },
+      { "q": "Q2 2026", "status": "Iterate & improve", "desc": "Enhance AI transitions, recsys, social" },
+      { "q": "Q3 2026", "status": "Public launch", "desc": "PR + partnerships, 50k users target" },
+      { "q": "Late 2026", "status": "Growth", "desc": "Freemium + ads + premium, scale to 500k–1M" }
+    ]
+  }
+  
